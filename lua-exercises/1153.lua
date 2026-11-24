@@ -1,0 +1,10 @@
+local n = io.read("*n")
+
+local function factorial(n) 
+    if n == 0 then
+        return 1
+    end
+    return n*factorial(n-1)
+end
+
+print(factorial(n))
